@@ -701,12 +701,22 @@ footer span a:hover{
     .skills .max-width .glass2{
         min-height:10vh;
     }
-
+    
     .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 8px;
+        font-size: 6px;
         margin-left: 0px;
-        margin-right: 10px;
+        margin-right: 15px;
+        
+    }
+    
+    .skills .skills-content .title{
+        margin-top:160px;
+    }
+    
+    .skills{
+        padding:140px;
+    }
     }
     
     .skills .max-width .title{
@@ -786,11 +796,20 @@ footer span a:hover{
         margin-bottom: 20px;
     
 
-    }
-    .skills .skills-content .right span{
+   .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 4px;
-        margin-left:0px;
+        font-size: 6px;
+        margin-left: 0px;
+        margin-right: 15px;
+        
+    }
+    
+    .skills .skills-content .title{
+        margin-top:160px;
+    }
+    
+    .skills{
+        padding:120px;
     }
 
     .skills .skills-content .right .bars .line{
