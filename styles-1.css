@@ -816,7 +816,11 @@ footer span a:hover{
     }
     
     .skills .skills-content .title{
-        margin-top:120px;
+        margin-top:160px;
+    }
+    
+    .skills{
+        padding:120px;
     }
     
     .skills .skills-content .right .line{
