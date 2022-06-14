@@ -277,7 +277,7 @@
     margin-top:40px;
     padding-top:10px;
     padding-bottom:10px;
-    margin-bottom:30px;
+    margin-bottom:80px;
     letter-spacing:10px;
     color:white;
     display:block;
@@ -626,8 +626,6 @@ footer span a:hover{
     
     
     }
-    
-    
     .commission .max-width .title{
         text-align:center;
         font-size:30px;
@@ -701,35 +699,16 @@ footer span a:hover{
     .skills .max-width .glass2{
         min-height:10vh;
     }
-    
+
     .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 6px;
+        font-size: 12px;
         margin-left: 0px;
         margin-right: 15px;
-        
-    }
-    
-    .skills .skills-content .title{
-        margin-top:160px;
-    }
-    
-    .skills{
-        padding:140px;
-    }
-    }
-    
-    .skills .max-width .title{
-        font-size:20px;
-        margin-top:40px;
-        margin-bottom:30px;
-        letter-spacing:10px;
-        color:white;
-        display:block;
     }
 
     .skills .skills-content .left img{
-        width: 30px;
+        width: 40px;
         float:left;
         margin: 10px;
         margin-top:40px;
@@ -796,25 +775,16 @@ footer span a:hover{
         margin-bottom: 20px;
     
 
-   .skills .skills-content .right span{
+    }
+    .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 6px;
-        margin-left: 0px;
-        margin-right: 15px;
-        
-    }
-    
-    .skills .skills-content .title{
-        margin-top:160px;
-    }
-    
-    .skills{
-        padding:120px;
+        font-size: 12px;
+        margin-left:0px;
     }
 
     .skills .skills-content .right .bars .line{
         font-weight: 500;
-        font-size: 4px;
+        font-size: 12px;
         margin-left:0px;
 
     }
@@ -828,22 +798,16 @@ footer span a:hover{
 @media only screen and (max-width: 1230px) {
     .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 6px;
+        font-size: 12px;
         margin-left: 0px;
         margin-right: 15px;
-        margin-top:10px;
+        margin-top: 30px;
+    }
+
+    .skills .max-width .title{
+        margin-top: 50px;
         
-        
     }
-    
-    .skills .skills-content .title{
-        margin-top:160px;
-    }
-    
-    .skills{
-        padding:120px;
-    }
-    
     .skills .skills-content .right .line{
         height: 5px;
         width: 100%;
@@ -853,15 +817,11 @@ footer span a:hover{
         margin-right: 15px;
     }
     .skills .skills-content .left img{
-        width: 50px;
+        width: 35px;
         float:left;
         margin: 10px;
         margin-top:40px;
     }
-    
-
-
-   
 }
 @media only screen and (max-width: 320px) {
     .commission .comms-content .card{
