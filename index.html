@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wonkerbonker's portfolio!</title>
-    <link rel="stylesheet" href="styles-1.css">
+    <link rel="stylesheet" href="styles-index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" type="image/x-icon" href="images/icons/duckicon.ico">
@@ -12,19 +12,18 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="logo"> <img src="images/logo.png"> <p>WonkerBonker</p></div>
         <div class="max-width">
-            <div class="logo"> <a href="#"> WonkerBonker's Portfolio.</a></div>
-
             <ul class="menu">
                 <ul class="menu">
-                    <li class="buttons" style="background:#008ed6;"><a href="#home">Home</a></li>
-                    <li class="buttons" style="background:#008ed6;"><a href="#commission">Commission</a></li>
-                    <li class="buttons" style="background:#008ed6;"><a href="#skills">Skills</a></li>
-                    <li class="buttons" style="background:#008ed6;"><a href="#works">Works</a></li>
-                    <li class="buttons" style="background:#008ed6;"><a href="#contact">Contact</a></li>
+                    <li class="buttons" style="background:none; border: 2px solid #09aafa;"><a href="#home">Home</a></li>
+                    <li class="buttons" style="background:#008ed6;"><a href="commisions.html">Commission</a></li>
+                    <li class="buttons" style="background:#008ed6;"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="buttons" style="background:#008ed6;"><a href="contact.html">Contact</a></li>
                 </ul>
             </ul>
 
+    
             <div class="menu-btn">
                 <i class="fa fas fa-bars"></i>
 
@@ -33,70 +32,38 @@
         </div>
     </nav>
 
-<section class="home" id="home">
+
+    <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">WonkerBonker.</div>
-                <div class="text-3">And I'm a <span>Video Graphics Editor.</span></div>
-                <a href="#commission">Commission me!</a>
+                <div class="text-3">and I'm a <span>Video Graphics Editor</span></div>
+                <div class="text-3" style="font-size:15px; margin-top:5px;"> *with 3 years of experience. </div>
+                <a href="commisions.html">Commission me!</a>
             </div>
             </div>
         </div>
-    </section>
+</section>
 
-<section class="commission" id="commission">
+<section class="featured">
     <div class="max-width">
-        <h2 class="title"> COMMISSIONS OPEN !! </h2>
-        <div class="info">
-                <p class="text-a"> Starting at ₱450, I'll <span>edit your videos</span> !</p>
-                <p class="text-b"> *Price may vary upon commission, depending on complexity and time allotted.</p>
-        </div>
-        <div class="comms-content">
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-solid fa-clapperboard"></i>
-                    <div class="text">Simple Video Edits</div>
-                    <br>
-                    <p> This includes cutting and cleaning footage, clipping together footage, basic color correction, as well as simple graphics and animations.</p>
-                    
-                </div>
-            </div>
-
-            <span class="narrow"></span>
-
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-solid fa-photo-film"></i>
-                    <div class="text">Explainer Video Graphics</div>
-                    <br>
-                    <p>I can make captivating motion graphics to creatively serve as a visual aid for several video projects. This includes simple animations and character rigging.</p>
-                    
-                </div>
-            </div>
-
-            <span class="narrow"></span>
-
-
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-solid fa-closed-captioning"></i>
-                    <div class="text">Adding Captions</div>
-                    <br>
-                    <p>I can transcribe and add captions to your videos. I can format them in any way you prefer them to be placed.</p>
-                    
-                </div>
-            </div>
-            
-    <div class="text-c">If you're interested, please do contact me!</div>
-
-        </div>
+        <h2 class="title"> Featured Projects</h2>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zL8oQ4B-uQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allowfullscreen class="video"></iframe>
+    <iframe src="https://www.youtube.com/embed/M09RuNwaMBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+    <div class="videoframe"></div>
+    <div class="max-width"></div>
+        <a href="portfolio.html" class="linktoportfolio"> To see more of my works, click here.</a>
     </div>
 </section>
 
+
+
+
 <section class="skills" id="skills">
     <div class="max-width">
-        <h2 class="title">My Skills</h2>
+        <h2 class="title">Software Skills</h2>
         
         <div class="glass">
             <div class="skills-content">
@@ -214,73 +181,6 @@
     </div>
 </section>
 
-<section class="works" id="works">
-    <div class="max-width">
-        <h2 class="title">My Works and Projects</h2>
-        <div class="box">
-            <iframe src="https://www.youtube.com/embed/M09RuNwaMBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-            <br>
-            <div class="symbols">
-                <i class="fa-solid fa-volume-xmark"></i>
-                <i class="fa-solid fa-draw-polygon"></i>
-            </div>
-            <p class="heading">'The Moral World' Intro</p>
-            <p class="subheading">This is an intro animation I made for a project back then. I used Illustrator, Photoshop and AfterEffects to produce this. <i>Audio removed to avoid copyright.</i></p>
-        </div>
-        <div class="box">
-            <iframe src="https://www.youtube.com/embed/skpqg1DK_xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"> </iframe>
-            <br>
-            <div class="symbols">
-                <i class="fa-solid fa-file-audio"></i>
-                <i class="fa-solid fa-video"></i>
-            </div>
-            <p class="heading">Mock News Broadcast</p>
-            <p class="subheading">A Mock News Broadcast I made. Majority of the video was made using Premiere, but the intro was made using After Effects. <i>Audio and Video alterations have been made for privacy purposes.</i></p>
-        </div>
-        <div class="box">
-            <iframe src="https://www.youtube.com/embed/XvPDpfNyA1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-            <br>
-            <div class="symbols">
-                <i class="fa-solid fa-volume-xmark"></i>
-                <i class="fa-solid fa-draw-polygon"></i>
-            </div>
-            <p class="heading">30s Animated Mock Commercial</p>
-            <p class="subheading">A 30 second animated commercial I made using After Effects and Adobe Illustrator. Designs for the product itself, and the logo are not mine. <i>Audio was removed to avoid copyright.</i></p>
-        </div>
-        <div class="box">
-            <iframe src="https://www.youtube.com/embed/JbCMzJ60DNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-            <br>
-            <div class="symbols">
-                <i class="fa-solid fa-volume-low"></i>
-                <i class="fa-solid fa-video"></i>
-            </div>
-            <p class="heading">Noli Me Tangere: Kabanata 18 Summary</p>
-            <p class="subheading">A summary of Kabanata 18 of Noli Me Tangere. This was made with After Effects and Premiere. <b><i>The audio of the video is heavily distorted to protect the privacy of the subjects.</i></b></p>
-        </div>
-        <div class="box">
-            <iframe src="https://www.youtube.com/embed/X4YwwAARrqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-            <br>
-            <div class="symbols">
-                <i class="fa-solid fa-volume-low"></i>
-                <i class="fa-solid fa-video"></i>
-            </div>
-            <p class="heading">Noli Me Tangere: Kabanata 19 Summary</p>
-            <p class="subheading">A summary of Kabanata 19 of Noli Me Tangere. This was made with After Effects and Premiere. <b><i>The audio of the video is heavily distorted to protect the privacy of the subjects.</i></b></p>
-        </div>
-        <div class="box">
-            <iframe src="https://www.youtube.com/embed/Ff6ITvdp8m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-            <br>
-            <div class="symbols">
-                <i class="fa-solid fa-volume-low"></i>
-                <i class="fa-solid fa-video"></i>
-            </div>
-            <p class="heading">Noli Me Tangere: Kabanata 20 Summary</p>
-            <p class="subheading">A summary of Kabanata 20 of Noli Me Tangere. This was made with After Effects and Premiere. <b><i>The audio of the video is heavily distorted to protect the privacy of the subjects.</i></b></p>
-        </div>
-        
-    </div>
-</section>
-
 <section class="contact" id="contact">
     <div class="max-width">
         <h2 class="title">Contact me here:</h2>
@@ -307,10 +207,13 @@
 </section>
 
 <footer>
-    <span> Created By <a href="https://twitter.com/Bonkawonker">WonkerBonker</a>
-
-
-
+    <span> Created By <a href="https://twitter.com/Bonkawonker">WonkerBonker</a> </span>
+    <div class="contacts">
+        <a href="https://twitter.com/Bonkawonker"><i class="fa-brands fa-twitter" style="color:white;"></i></a>
+        <a href="https://www.reddit.com/user/WONKERBONKERJONKER"><i class="fa-brands fa-reddit" style="color:white;"></i></a>
+        <a href="https://www.instagram.com/wonkybonker/"><i class="fa-brands fa-instagram" style="color:white;"></i></a>
+    </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

@@ -11,17 +11,40 @@
 
 .navbar{
     position:fixed;
+    z-index: 2;
     width: 100%;
     font-family: 'Oswald', sans-serif;
     padding-bottom: 20px;
     padding-top: 20px;
+    display:flex;
     transition: all 0.3s ease;
+}
+
+/* logo */
+.navbar .logo{
+    float:left;
+    max-width:20%;
+    margin-left:10%;
+
+}
+
+.navbar .logo p{
+    margin-top:1%;
+    font-size: 25px;
+    font-weight: 600;
+    color:#09aafa;
+}
+
+.navbar .logo img {
+    width:30%;
+    float:left;
+    display:block;
 }
 
 .navbar.sticky{
     background: #0c161b;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 /* buttons */
 
@@ -38,6 +61,8 @@
     font-size: 15px;
     cursor:pointer;
     background:#09aafa;
+    display:inline;
+    flex-shrink:1;
 }
 /* button animation */
 
@@ -89,19 +114,7 @@
     align-items:center;
     justify-content:space-between;
 }
-/* logo */
 
-.navbar .logo a{
-    color: #09aafa;
-    font-size: 40px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-    cursor:default;
-}
-
-.navbar .logo a:hover{
-    color: gold;
-}
 
 /* menu btn styling */
 
@@ -119,6 +132,7 @@
 .home{
     display:flex;
     background: url(images/background.png) no-repeat center;
+    background-size: cover;
     height:100vh;
     min-height: 500px;
     color:white;
@@ -133,34 +147,39 @@
 
 .home .home-content .text-1{
     font-size: 27px;
-}
+    animation: opening 3s ease 0s 1 normal;
 
+}
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    animation: opening 3s ease 0s 1 normal;
+
 }
 
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    animation: opening 3s ease 0s 1 normal;
 }
 
 .home .home-content .text-3 span{
     color: #09aafa;
+    animation: opening-blue 3s ease 0s 1 normal;
 }
 
 .home .home-content a{
     display:inline-block;
     background:#09aafa;
     color:white;
+    border: 2px solid #09aafa;
     border-radius:9px;
     padding: 12px 36px;
     margin-top: 20px;
-    border: 2px solid #09aafa;
     font-size:30px;
-    transition: all 0.3s ease
-
+    transition: all 0.3s ease;
+    animation: opening-btn 3s ease 0s 1 normal;
 }
 
 .home .home-content a:hover{
@@ -169,101 +188,54 @@
 
 }
 
-/* responsive media query start */
+/* Featured Styling */
 
+.featured{
+    background: linear-gradient(to bottom, #00020C, #00051E );
+    padding-top: 30px;
+    padding-bottom:30px;
+}
 
-
-
-
-/* Commissions Section */
-
-.commission .max-width .title{
+.featured .title{
     text-align:center;
     font-size:30px;
     font-family: 'Oswald', sans-serif;
-    border: 4px solid black;
-    margin-top:40px;
+    border: 3px solid white;
     padding-top:10px;
     padding-bottom:10px;
-    margin-bottom:40px;
+    margin-bottom:30px;
     letter-spacing:10px;
+    color:white;
+    display:block;
 }
 
-
-.commission .max-width .info .text-a{
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-
+.featured .video{
+    min-width: 70vw;
+    min-height: 30vh;
+    display:block;
+    margin: 0 auto 20px auto;
 }
 
-.commission .max-width .info .text-a span{
-    color:darkblue;
-}
-
-.commission .max-width .info .text-b{
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    margin-bottom:40px;
-
-
-}
-
-/* card styling */
-
-.commission .comms-content .card{
-    width: calc(33% - 20px);
-    background:black;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: default;
-    transition: color 0.9s ease;
-    border: 4px solid black;
-    border-radius: 3px;
-    display:inline-block; margin-left: 10px;
-
-}
-
-.commission .comms-content .card:hover{
-    background:white;
-    color:black;
-}
-
-.commission .comms-content .card .box .text{
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px
-}
-
-.commission .comms-content .card .box p{
-    font-family: 'Open Sans', sans-serif;
-}
-
-.commission .comms-content .card .box i{
-    font-size: 27px;
-
-    margin: 20px;
-}
-
-.commission .comms-content .card .box p{
-    margin: 20px;
-}
-
-.commission .max-width .text-c{
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    padding: 30px;
-    margin-top:20px;
-    text-align:center;
+.featured .linktoportfolio{
     text-decoration:underline;
-
+    text-align:center;
+    font-size:30px;
+    font-family: 'Oswald', sans-serif;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+    color:white;
+    display:block;
+    z-index:1;
 }
+
+
 
 /* skills styling*/
 
 .skills {
-    display:block;
-    background: url(images/skillsbg.png) no-repeat center;
+    display:flex;
+    background: url(images/skillsbg.png);
     padding-top:20px;
     padding-bottom:40px;
 
@@ -277,7 +249,7 @@
     margin-top:40px;
     padding-top:10px;
     padding-bottom:10px;
-    margin-bottom:30px;
+    margin-bottom:80px;
     letter-spacing:10px;
     color:white;
     display:block;
@@ -392,74 +364,7 @@
     width: 40%;
 }
 
-/* works */
 
-.works{
-    padding-bottom:30px;
-}
-.works .max-width .title{
-    text-align:center;
-    font-size:30px;
-    font-family: 'Oswald', sans-serif;
-    border: 4px solid black;
-    margin-top:40px;
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-bottom:40px;
-    letter-spacing:10px;
-}
-
-.works .max-width .box{
-    background:black;
-    color:white;
-    padding:30px;
-    display:inline-block;
-    border: 3px solid black;
-    border-radius:5px;
-    margin:20px;
-    width: calc(50% - 50px);
-    transition: color 0.3s ease;
-
-}
-
-.works .max-width .box:hover{
-    background:white;
-    color:black;
-    border: 3px solid black;
-    border-radius:5px;
-
-}
-
-.works .max-width .box .subheading{
-    font-size:10px;
-    display: inline-block;
-}
-
-.works .max-width .box .video{
-    display:block;
-    width: 100%;
-    height: 315px;
-    margin: 0 auto 0 auto;
-
-}
-
-.works .max-width .symbols{
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-bottom: 10px;
-    letter-spacing: 10px;
-}
-
-.works .max-width .box .heading{
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.works .max-width .box .subheading{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
-}
 
 /* contact */
 
@@ -530,7 +435,6 @@ footer span a:hover{
 
 
 
-
 @media only screen and (max-width: 800px) {
     .max-width{
         padding: 0 20px;
@@ -542,12 +446,13 @@ footer span a:hover{
         cursor:pointer;
         display:block;
         z-index:999;
+        margin-left:90%
     }
 
     .menu-btn i.active:before{
         content: '\f00d';
     }
-
+    
 
     .navbar .menu{
         position:fixed;
@@ -577,10 +482,17 @@ footer span a:hover{
 
     }
 
-    .navbar .logo a{
- 
-        font-size: 30px;
-
+    .navbar .logo{
+        float:left;
+        max-width:30%;
+        margin-left:10%;
+        font-size: 20px;
+    }
+    
+    .navbar .logo img {
+        width:60%;
+        float:left;
+        display:block;
     }
 
 
@@ -626,71 +538,7 @@ footer span a:hover{
     
     
     }
-    .commission .max-width .title{
-        text-align:center;
-        font-size:30px;
-        font-family: 'Oswald', sans-serif;
-        border: 4px solid black;
-        margin-top:40px;
-        padding-top:10px;
-        padding-bottom:10px;
-        margin-bottom:40px;
-        letter-spacing:2px;
-    }
-
-    .commission .max-width .info .text-a{
-        font-size: 40px;
-    }
-
-    .narrow{
-        display:block;
-    }
-    
-    .commission .max-width .info .text-a span{
-        color:darkblue;
-    }
-    
-    .commission .max-width .info .text-b{
-        font-size: 24px;
-    }
-
-    /* card styling */
-
-    .commission .comms-content .card{
-        width: 600px;
-        margin-left: 35px;
-        margin-bottom: 20px;
-    
-
-    }
-
-    .commission .comms-content .card:hover{
-        background:white;
-        color:black;
-    }
-
-    .commission .comms-content .card .box .text{
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px
-    }
-    .commission .comms-content .card .box i{
-        margin: 10px;
-    }
-
-    .commission .comms-content .card .box p{
-        margin: 10px;
-    }
-
-    .commission .max-width .text-c{
-        font-family: 'Oswald', sans-serif;
-        font-size: 30px;
-        padding: 30px;
-        margin-top:20px;
-        text-align:center;
-        text-decoration:underline;
-    
-    }
-
+   
 
     .skills .max-width .glass{
         min-height:10vh;
@@ -702,64 +550,16 @@ footer span a:hover{
 
     .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 8px;
+        font-size: 12px;
         margin-left: 0px;
-        margin-right: 10px;
-    }
-    
-    .skills .max-width .title{
-        font-size:20px;
-        margin-top:40px;
-        margin-bottom:30px;
-        letter-spacing:10px;
-        color:white;
-        display:inline-block;
+        margin-right: 15px;
     }
 
     .skills .skills-content .left img{
-        width: 30px;
+        width: 40px;
         float:left;
         margin: 10px;
         margin-top:40px;
-    }
-
-    .works .max-width .box{
-        background:black;
-        color:white;
-        padding:30px;
-        display:block;
-        border: 3px solid black;
-        border-radius:5px;
-        margin:20px;
-        width: 300px;
-        transition: color 0.3s ease;
-    
-    }
-
-    .works .max-width .box .subheading{
-        font-size:10px;
-        display: inline-block;
-    }
-    
-    .works .max-width .box .video{
-        display:block;
-        width: 75%;
-        height: 270px;
-        margin: 0 auto 0 auto;
-    
-    }
-    
-    .works .max-width .symbols{
-        font-size: 30px;
-        margin-bottom: 10px;
-        margin-bottom: 10px;
-        letter-spacing: 10px;
-    }
-    
-    .works .max-width .box .heading{
-        font-family: 'Oswald', sans-serif;
-        font-size: 30px;
-        margin-bottom: 10px;
     }
 
     .contact{
@@ -778,27 +578,19 @@ footer span a:hover{
 }
 
 @media only screen and (max-width: 414px) {
-    .commission .comms-content .card{
-        width: 300px;
-        margin-left: 35px;
-        margin-bottom: 20px;
-    
-
-    }
+   
     .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 4px;
+        font-size: 12px;
         margin-left:0px;
     }
 
     .skills .skills-content .right .bars .line{
         font-weight: 500;
-        font-size: 4px;
+        font-size: 12px;
         margin-left:0px;
 
     }
-
-
 
 
     
@@ -807,9 +599,15 @@ footer span a:hover{
 @media only screen and (max-width: 1230px) {
     .skills .skills-content .right span{
         font-weight: 500;
-        font-size: 16px;
+        font-size: 12px;
         margin-left: 0px;
         margin-right: 15px;
+        margin-top: 30px;
+    }
+
+    .skills .max-width .title{
+        margin-top: 50px;
+        
     }
     .skills .skills-content .right .line{
         height: 5px;
@@ -820,21 +618,27 @@ footer span a:hover{
         margin-right: 15px;
     }
     .skills .skills-content .left img{
-        width: 50px;
+        width: 35px;
         float:left;
         margin: 10px;
         margin-top:40px;
     }
 }
-@media only screen and (max-width: 320px) {
-    .commission .comms-content .card{
-        width: 200px;
-        margin-left: 35px;
-        margin-bottom: 20px;
-    
-
-    }
-
-    
+@keyframes opening{
+    from {color: #00000000;}
+    to {color:white;}
 }
 
+@keyframes opening-blue{
+    from {color: #00000000;}
+    to {color:#09aafa;}
+}
+
+@keyframes opening-btn{
+    from { background:#09aafa00;
+        color:rgba(255, 255, 255, 0);
+        border: 2px solid #09aafa00;}
+    to {  background:#09aafa;
+        color:white;
+        border: 2px solid #09aafa;}
+}

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* nav bar styling */
+
+.navbar{
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display:flex;
+    transition: all 0.3s ease;
+}
+
+
+
+/* logo */
+.navbar .logo{
+    float:left;
+    max-width:20%;
+    margin-left:10%;
+
+}
+
+.navbar .logo p{
+    margin-top:1%;
+    font-size: 25px;
+    font-weight: 600;
+    color:#09aafa;
+}
+
+.navbar .logo img {
+    width:30%;
+    float:left;
+    display:block;
+}
+
+.navbar.sticky{
+    background: #0c161b;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+/* buttons */
+
+.navbar .menu li a{
+    color: white;
+    
+}
+
+.buttons{
+    transition: transform 0.3s ease;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor:pointer;
+    background:#09aafa;
+    display:inline;
+    flex-shrink:1;
+}
+/* button animation */
+
+.buttons::after, .buttons::before{
+    content:"";
+    position: absolute;
+    opacity: 0.3;
+
+    border-radius: inherit;
+    width: 100%;
+    height:100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+
+}
+
+.buttons:hover{
+    transform: translate(-12px, -12px);
+    background:#09aafa;
+}
+
+.buttons:hover::after{
+    transform: translate(6px, 6px);
+    background:#09aafa;
+}
+
+.buttons:hover::before{
+    transform: translate(12px, 12px);
+    background:#09aafa;
+}
+
+/* buttons alignment */
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+
+.navbar .max-width{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+/* menu btn styling */
+
+.menu-btn{
+    color:#09aafa;
+    font-size:27px;
+    cursor:pointer;
+    display:none;
+}
+
+.filler{
+    background: url(images/skillsbg.png) no-repeat center;
+    background-size: cover;
+    height: 15vh;
+}
+
+
+/* works */
+
+.works{
+    padding-bottom:30px;
+}
+.works .max-width .title{
+    text-align:center;
+    font-size:30px;
+    font-family: 'Oswald', sans-serif;
+    border: 4px solid black;
+    margin-top:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:40px;
+    letter-spacing:10px;
+    animation: opening 1s ease 0s 1 normal;
+}
+
+
+.works .max-width .box{
+    background:black;
+    color:white;
+    padding:30px;
+    display:inline-block;
+    border: 3px solid black;
+    border-radius:5px;
+    margin:20px;
+    width: calc(50% - 50px);
+    transition: color 0.3s ease;
+    animation: opening 3s ease 0s 1 normal;
+}
+
+
+.works .max-width .box:hover{
+    background:white;
+    color:black;
+    border: 3px solid black;
+    border-radius:5px;
+
+}
+
+.works .max-width .box .subheading{
+    font-size:10px;
+    display: inline-block;
+}
+
+.works .max-width .box .video{
+    display:block;
+    width: 100%;
+    height: 315px;
+    margin: 0 auto 0 auto;
+
+}
+
+.works .max-width .symbols{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 10px;
+}
+
+.works .max-width .box .heading{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.works .max-width .box .subheading{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+/* footer section styling */
+
+footer{
+    background: #0c161b;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+footer span a{
+    color: #09aafa;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .max-width{
+        padding: 0 20px;
+    }
+
+    .menu-btn{
+        color:#09aafa;
+        font-size:27px;
+        cursor:pointer;
+        display:block;
+        z-index:999;
+        margin-left:90%
+    }
+    .filler{
+        background: url(images/skillsbg.png) no-repeat center;
+        background-size: cover;
+        height: 30vh;
+    }
+
+    .menu-btn i.active:before{
+        content: '\f00d';
+    }
+    
+
+    .navbar .menu{
+        position:fixed;
+        background: #0c161b90;
+        height: 100vh;
+        width: 100%;
+        left:-100%;
+        top:0;
+        padding-top:100px;
+        transition: all 0.3s ease;
+
+    }
+
+    .navbar .menu .active{
+        left:0;
+    }
+
+
+    .navbar .menu .buttons{
+        padding: 5px 15px;
+        margin: 7px;
+        border-radius: 20px;
+        font-size: 12px;
+        text-align:center;
+        cursor:pointer;
+        margin-bottom: 10px;
+
+    }
+
+    .navbar .logo{
+        float:left;
+        max-width:30%;
+        margin-left:10%;
+        font-size: 20px;
+    }
+    
+    .navbar .logo img {
+        width:60%;
+        float:left;
+        display:block;
+    }
+
+
+    .navbar .menu li{
+        display:block;
+    }
+
+    .navbar .menu li a{
+        display:inline-block;
+    }
+    
+
+    .works .max-width .box{
+        background:black;
+        color:white;
+        padding:30px;
+        display:block;
+        border: 3px solid black;
+        border-radius:5px;
+        margin:20px;
+        width: 300px;
+        transition: color 0.3s ease;
+    
+    }
+
+    .works .max-width .box .subheading{
+        font-size:10px;
+        display: inline-block;
+    }
+    
+    .works .max-width .box .video{
+        display:block;
+        width: 75%;
+        height: 270px;
+        margin: 0 auto 0 auto;
+    
+    }
+    
+    .works .max-width .symbols{
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+        letter-spacing: 10px;
+    }
+    
+    .works .max-width .box .heading{
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+@keyframes opening{
+    from {opacity: 0;}
+    to {opacity:1;}
+}
